@@ -10,10 +10,10 @@ namespace Capa_de_acceso
 {
     public class Classconexion
     {
-        SqlConnection Oconexion = new SqlConnection("Server=LAPTOP-NKDVUSVE\\SQLEXPRESS;Database=Granja_MA;UID=tryuser;PWD=159753");
+        SqlConnection Oconexion = new SqlConnection("Server=LAPTOP-NKDVUSVE\\SQLEXPRESS;Database=Granja_MA;UID=tryuser;PWD=741852");
         //Conexion
         //Apertura
-        void Open_conexion()
+         public void Open_conexion()
         {
             if (Oconexion.State == ConnectionState.Closed)
             {
@@ -22,7 +22,7 @@ namespace Capa_de_acceso
             
         }
         //Cierre
-        void Close_conexion()
+        public void Close_conexion()
         {
             if (Oconexion.State == ConnectionState.Open)
             {
@@ -31,7 +31,7 @@ namespace Capa_de_acceso
            
         }
         //Ejecucion de SP´s
-        void Exec_sp(String nombre, List <Classparametros> list_params)
+        public void Exec_sp(String nombre, List <Classparametros> list_params)
         {
             SqlCommand clt;
             try
@@ -71,7 +71,7 @@ namespace Capa_de_acceso
                Close_conexion();
         }
         //Listar consulta SQL
-           public DataTable Listado (String nombre_sp, List<Classparametros> list_params)
+        public DataTable Listar_datos (String nombre_sp, List<Classparametros> list_params)
         {
             DataTable ldt = new DataTable();
             SqlDataAdapter sda;
@@ -97,5 +97,7 @@ namespace Capa_de_acceso
 
             return ldt;
         }
+        
+        
     }
 }
