@@ -33,19 +33,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pb1 = new System.Windows.Forms.PictureBox();
+            this.tbraza = new System.Windows.Forms.TextBox();
+            this.datetime = new System.Windows.Forms.DateTimePicker();
+            this.tb_codp = new System.Windows.Forms.TextBox();
+            this.tb_codm = new System.Windows.Forms.TextBox();
+            this.tbtip_proc = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tbfname = new System.Windows.Forms.TextBox();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.btnhome = new System.Windows.Forms.Button();
+            this.busq_img = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -93,50 +94,50 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Tipo de procreación";
             // 
-            // pictureBox1
+            // pb1
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox1.Location = new System.Drawing.Point(190, 224);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(214, 165);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.pb1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pb1.Location = new System.Drawing.Point(190, 224);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(214, 165);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb1.TabIndex = 5;
+            this.pb1.TabStop = false;
             // 
-            // textBox1
+            // tbraza
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
-            this.textBox1.TabIndex = 6;
+            this.tbraza.Location = new System.Drawing.Point(190, 30);
+            this.tbraza.Name = "tbraza";
+            this.tbraza.Size = new System.Drawing.Size(143, 20);
+            this.tbraza.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // datetime
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(190, 65);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.datetime.Location = new System.Drawing.Point(190, 65);
+            this.datetime.Name = "datetime";
+            this.datetime.Size = new System.Drawing.Size(200, 20);
+            this.datetime.TabIndex = 7;
             // 
-            // textBox2
+            // tb_codp
             // 
-            this.textBox2.Location = new System.Drawing.Point(190, 99);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 20);
-            this.textBox2.TabIndex = 8;
+            this.tb_codp.Location = new System.Drawing.Point(190, 99);
+            this.tb_codp.Name = "tb_codp";
+            this.tb_codp.Size = new System.Drawing.Size(143, 20);
+            this.tb_codp.TabIndex = 8;
             // 
-            // textBox3
+            // tb_codm
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 134);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(143, 20);
-            this.textBox3.TabIndex = 9;
+            this.tb_codm.Location = new System.Drawing.Point(190, 134);
+            this.tb_codm.Name = "tb_codm";
+            this.tb_codm.Size = new System.Drawing.Size(143, 20);
+            this.tb_codm.TabIndex = 9;
             // 
-            // textBox4
+            // tbtip_proc
             // 
-            this.textBox4.Location = new System.Drawing.Point(190, 171);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(143, 20);
-            this.textBox4.TabIndex = 10;
+            this.tbtip_proc.Location = new System.Drawing.Point(190, 171);
+            this.tbtip_proc.Name = "tbtip_proc";
+            this.tbtip_proc.Size = new System.Drawing.Size(143, 20);
+            this.tbtip_proc.TabIndex = 10;
             // 
             // label6
             // 
@@ -147,66 +148,74 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Nombre de archivo";
             // 
-            // textBox5
+            // tbfname
             // 
-            this.textBox5.Location = new System.Drawing.Point(203, 433);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(177, 20);
-            this.textBox5.TabIndex = 12;
+            this.tbfname.Location = new System.Drawing.Point(203, 433);
+            this.tbfname.Name = "tbfname";
+            this.tbfname.Size = new System.Drawing.Size(177, 20);
+            this.tbfname.TabIndex = 12;
             // 
-            // button1
+            // btnsave
             // 
-            this.button1.Location = new System.Drawing.Point(434, 264);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 35);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnsave.Location = new System.Drawing.Point(434, 264);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(106, 35);
+            this.btnsave.TabIndex = 13;
+            this.btnsave.Text = "Registrar";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.Btnsave_Click);
             // 
-            // button2
+            // btncancel
             // 
-            this.button2.Location = new System.Drawing.Point(434, 329);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 35);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btncancel.Location = new System.Drawing.Point(434, 329);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(106, 35);
+            this.btncancel.TabIndex = 14;
+            this.btncancel.Text = "Cancelar";
+            this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.Btncancel_Click);
             // 
-            // button3
+            // btnhome
             // 
-            this.button3.Location = new System.Drawing.Point(434, 418);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 35);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Volver a Menú";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnhome.Location = new System.Drawing.Point(434, 418);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Size = new System.Drawing.Size(106, 35);
+            this.btnhome.TabIndex = 15;
+            this.btnhome.Text = "Volver a Menú";
+            this.btnhome.UseVisualStyleBackColor = true;
+            this.btnhome.Click += new System.EventHandler(this.Btnhome_Click);
             // 
-            // button4
+            // busq_img
             // 
-            this.button4.Location = new System.Drawing.Point(190, 395);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(214, 21);
-            this.button4.TabIndex = 16;
-            this.button4.Text = "Buscar imagen";
-            this.button4.UseVisualStyleBackColor = true;
+            this.busq_img.Location = new System.Drawing.Point(190, 395);
+            this.busq_img.Name = "busq_img";
+            this.busq_img.Size = new System.Drawing.Size(214, 21);
+            this.busq_img.TabIndex = 16;
+            this.busq_img.Text = "Buscar imagen";
+            this.busq_img.UseVisualStyleBackColor = true;
+            this.busq_img.Click += new System.EventHandler(this.Busq_img_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Registro_ternero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 465);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.busq_img);
+            this.Controls.Add(this.btnhome);
+            this.Controls.Add(this.btncancel);
+            this.Controls.Add(this.btnsave);
+            this.Controls.Add(this.tbfname);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.tbtip_proc);
+            this.Controls.Add(this.tb_codm);
+            this.Controls.Add(this.tb_codp);
+            this.Controls.Add(this.datetime);
+            this.Controls.Add(this.tbraza);
+            this.Controls.Add(this.pb1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -214,7 +223,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Registro_ternero";
             this.Text = "Registrar Ternero";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registro_ternero_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,17 +237,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.PictureBox pb1;
+        private System.Windows.Forms.TextBox tbraza;
+        private System.Windows.Forms.DateTimePicker datetime;
+        private System.Windows.Forms.TextBox tb_codp;
+        private System.Windows.Forms.TextBox tb_codm;
+        private System.Windows.Forms.TextBox tbtip_proc;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox tbfname;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.Button btnhome;
+        private System.Windows.Forms.Button busq_img;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

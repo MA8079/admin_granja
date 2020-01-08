@@ -27,10 +27,10 @@ namespace Capa_de_negocio
             List<Classparametros> lst = new List<Classparametros>();
             try
             {
-                lst.Add(new Classparametros("@R_padre", cod_padre));
-                lst.Add(new Classparametros("@R_madre", cod_madre));
+                lst.Add(new Classparametros("@Cod_toro", cod_padre));
+                lst.Add(new Classparametros("@Cod_vaca", cod_madre));
                 lst.Add(new Classparametros("@Raza", raza));
-                lst.Add(new Classparametros("@F_nac", fech_nac));
+                lst.Add(new Classparametros("@Fech_nac", fech_nac));
                 lst.Add(new Classparametros("@Tip_proc", tip_procreacion));
                 lst.Add(new Classparametros("@Foto", foto_ternero));
                 

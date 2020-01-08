@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form_Registros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_Registros.Designer.cs">
+      <DependentUpon>Form_Registros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +71,12 @@
     </Compile>
     <Compile Include="Registrar_prod.Designer.cs">
       <DependentUpon>Registrar_prod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar_toro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar_toro.Designer.cs">
+      <DependentUpon>Registrar_toro.cs</DependentUpon>
     </Compile>
     <Compile Include="Registro_tto.cs">
       <SubType>Form</SubType>
@@ -84,20 +96,17 @@
     <Compile Include="Registro_ternero.Designer.cs">
       <DependentUpon>Registro_ternero.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registro_toro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Registro_toro.Designer.cs">
-      <DependentUpon>Registro_toro.cs</DependentUpon>
-    </Compile>
     <Compile Include="Registro_vaca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Registro_vaca.Designer.cs">
       <DependentUpon>Registro_vaca.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Registros.resx">
+      <DependentUpon>Form_Registros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +123,9 @@
     <EmbeddedResource Include="Registrar_prod.resx">
       <DependentUpon>Registrar_prod.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registrar_toro.resx">
+      <DependentUpon>Registrar_toro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registro_tto.resx">
       <DependentUpon>Registro_tto.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,9 +134,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_ternero.resx">
       <DependentUpon>Registro_ternero.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registro_toro.resx">
-      <DependentUpon>Registro_toro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_vaca.resx">
       <DependentUpon>Registro_vaca.cs</DependentUpon>

@@ -30,16 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbprecio = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.tb_code = new System.Windows.Forms.TextBox();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.btnhome = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -61,12 +60,12 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Precio  S/";
             // 
-            // textBox1
+            // tbprecio
             // 
-            this.textBox1.Location = new System.Drawing.Point(99, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(72, 20);
-            this.textBox1.TabIndex = 2;
+            this.tbprecio.Location = new System.Drawing.Point(99, 97);
+            this.tbprecio.Name = "tbprecio";
+            this.tbprecio.Size = new System.Drawing.Size(72, 20);
+            this.tbprecio.TabIndex = 2;
             // 
             // label3
             // 
@@ -87,81 +86,78 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(37, 145);
+            this.label4.Location = new System.Drawing.Point(200, 157);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.Size = new System.Drawing.Size(94, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Cod. Toro";
+            this.label4.Text = "Codigo de ganado";
             // 
-            // textBox2
+            // tb_code
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(72, 20);
-            this.textBox2.TabIndex = 6;
+            this.tb_code.Location = new System.Drawing.Point(300, 150);
+            this.tb_code.Name = "tb_code";
+            this.tb_code.Size = new System.Drawing.Size(72, 20);
+            this.tb_code.TabIndex = 6;
             // 
-            // label5
+            // btnsave
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 186);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Cod. Vaca";
+            this.btnsave.Location = new System.Drawing.Point(206, 202);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(75, 40);
+            this.btnsave.TabIndex = 9;
+            this.btnsave.Text = "Registrar";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.Btnsave_Click);
             // 
-            // textBox3
+            // btncancel
             // 
-            this.textBox3.Location = new System.Drawing.Point(100, 179);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(71, 20);
-            this.textBox3.TabIndex = 8;
+            this.btncancel.Location = new System.Drawing.Point(321, 202);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(75, 40);
+            this.btncancel.TabIndex = 10;
+            this.btncancel.Text = "Cancelar";
+            this.btncancel.UseVisualStyleBackColor = true;
+            this.btncancel.Click += new System.EventHandler(this.Btncancel_Click);
             // 
-            // button1
+            // btnhome
             // 
-            this.button1.Location = new System.Drawing.Point(203, 164);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 40);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnhome.Location = new System.Drawing.Point(464, 202);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Size = new System.Drawing.Size(105, 38);
+            this.btnhome.TabIndex = 11;
+            this.btnhome.Text = "Volver a Menú";
+            this.btnhome.UseVisualStyleBackColor = true;
+            this.btnhome.Click += new System.EventHandler(this.Btnhome_Click);
             // 
-            // button2
+            // comboBox1
             // 
-            this.button2.Location = new System.Drawing.Point(318, 164);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 40);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(40, 149);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(131, 21);
+            this.comboBox1.TabIndex = 12;
+            this.comboBox1.Text = "Seleccionar ganado";
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(465, 186);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Volver a Menú";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // Registrar_venta
+            // Registro_venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 220);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(578, 270);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnhome);
+            this.Controls.Add(this.btncancel);
+            this.Controls.Add(this.btnsave);
+            this.Controls.Add(this.tb_code);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbprecio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Registrar_venta";
+            this.Name = "Registro_venta";
             this.Text = "Registrar_venta";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registro_venta_FormClosing);
+            this.Load += new System.EventHandler(this.Registro_venta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,15 +167,14 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbprecio;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox tb_code;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.Button btnhome;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

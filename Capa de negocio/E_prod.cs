@@ -10,7 +10,7 @@ namespace Capa_de_negocio
 {
     public class E_prod
     {
-        public Double litros { get; set; }
+        public float litros { get; set; }
         public DateTime fech_reg { get; set; }
         public int cod_vaca { get; set; }
 
@@ -22,7 +22,7 @@ namespace Capa_de_negocio
             try
             {
                 //Parametros de entrada
-                lpms.Add(new Classparametros("@Peso", litros));
+                lpms.Add(new Classparametros("@Litro", litros));
                 lpms.Add(new Classparametros("@Fech_prod", fech_reg));
                 lpms.Add(new Classparametros("@Cod_vaca", cod_vaca));
 

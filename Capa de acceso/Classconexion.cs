@@ -45,7 +45,11 @@ namespace Capa_de_acceso
                     {
                         if (list_params[i].Direccion == ParameterDirection.Input)//Verificar si parametro es de entrada
                         {
-                            clt.Parameters.AddWithValue(list_params[i].Nombre,list_params[i].Valor); //Indicar los parametros del constructor de entrada de la clase parametros
+                           
+
+                            //CODIGO INICIAL ►►►
+                            clt.Parameters.AddWithValue(list_params[i].Nombre,list_params[i].Valor); //Indicar los parametros del constructor de entrada de la clase parametros 
+                            
                         }
                         if (list_params[i].Direccion == ParameterDirection.Output)
                         {

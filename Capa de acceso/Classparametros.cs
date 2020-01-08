@@ -15,7 +15,7 @@ namespace Capa_de_acceso
         public SqlDbType Tipodato { get; set; }
         public Int32 Tamanio { get; set; }
         public ParameterDirection Direccion { get; set; }
-
+        
         //Constructores
         //Entrada
         public Classparametros(String objnombre, Object objvalor)

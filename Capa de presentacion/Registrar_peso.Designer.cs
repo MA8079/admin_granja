@@ -30,158 +30,162 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbpeso = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.datetime = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.tb_code = new System.Windows.Forms.TextBox();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.btnhome = new System.Windows.Forms.Button();
+            this.cb1 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(127, 26);
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(160, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(163, 28);
+            this.label1.Size = new System.Drawing.Size(165, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Control de Peso";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 84);
+            this.label2.Location = new System.Drawing.Point(78, 145);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Peso";
             // 
-            // textBox1
+            // tbpeso
             // 
-            this.textBox1.Location = new System.Drawing.Point(50, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.tbpeso.BackColor = System.Drawing.Color.DarkGray;
+            this.tbpeso.Location = new System.Drawing.Point(82, 161);
+            this.tbpeso.Name = "tbpeso";
+            this.tbpeso.Size = new System.Drawing.Size(116, 20);
+            this.tbpeso.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(189, 84);
+            this.label3.Location = new System.Drawing.Point(244, 145);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Fecha";
             // 
-            // dateTimePicker1
+            // datetime
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(192, 100);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 4;
+            this.datetime.CalendarMonthBackground = System.Drawing.Color.Silver;
+            this.datetime.CalendarTrailingForeColor = System.Drawing.Color.Silver;
+            this.datetime.Location = new System.Drawing.Point(247, 161);
+            this.datetime.Name = "datetime";
+            this.datetime.Size = new System.Drawing.Size(233, 20);
+            this.datetime.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(47, 146);
+            this.label4.Location = new System.Drawing.Point(115, 216);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Cod. Toro";
+            this.label4.Text = "Código de ganado";
             // 
-            // label5
+            // tb_code
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(44, 181);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Cod. Vaca";
+            this.tb_code.BackColor = System.Drawing.Color.DarkGray;
+            this.tb_code.Location = new System.Drawing.Point(247, 209);
+            this.tb_code.Name = "tb_code";
+            this.tb_code.Size = new System.Drawing.Size(116, 20);
+            this.tb_code.TabIndex = 8;
             // 
-            // label6
+            // btnsave
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(47, 215);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 13);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Cod. Ternero";
+            this.btnsave.BackColor = System.Drawing.Color.Gold;
+            this.btnsave.ForeColor = System.Drawing.Color.Black;
+            this.btnsave.Location = new System.Drawing.Point(119, 260);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(98, 33);
+            this.btnsave.TabIndex = 11;
+            this.btnsave.Text = "Registrar";
+            this.btnsave.UseVisualStyleBackColor = false;
+            this.btnsave.Click += new System.EventHandler(this.Btnsave_Click);
             // 
-            // textBox2
+            // btncancel
             // 
-            this.textBox2.Location = new System.Drawing.Point(122, 143);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(51, 20);
-            this.textBox2.TabIndex = 8;
+            this.btncancel.BackColor = System.Drawing.Color.Gold;
+            this.btncancel.ForeColor = System.Drawing.Color.Black;
+            this.btncancel.Location = new System.Drawing.Point(297, 260);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(98, 33);
+            this.btncancel.TabIndex = 12;
+            this.btncancel.Text = "Cancelar";
+            this.btncancel.UseVisualStyleBackColor = false;
+            this.btncancel.Click += new System.EventHandler(this.Btncancel_Click);
             // 
-            // textBox3
+            // btnhome
             // 
-            this.textBox3.Location = new System.Drawing.Point(122, 178);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(51, 20);
-            this.textBox3.TabIndex = 9;
+            this.btnhome.BackColor = System.Drawing.Color.Gold;
+            this.btnhome.ForeColor = System.Drawing.Color.Black;
+            this.btnhome.Location = new System.Drawing.Point(119, 326);
+            this.btnhome.Name = "btnhome";
+            this.btnhome.Size = new System.Drawing.Size(276, 35);
+            this.btnhome.TabIndex = 13;
+            this.btnhome.Text = "Volver a Menú";
+            this.btnhome.UseVisualStyleBackColor = false;
+            this.btnhome.Click += new System.EventHandler(this.Btnhome_Click);
             // 
-            // textBox4
+            // cb1
             // 
-            this.textBox4.Location = new System.Drawing.Point(122, 212);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(51, 20);
-            this.textBox4.TabIndex = 10;
+            this.cb1.BackColor = System.Drawing.Color.Gainsboro;
+            this.cb1.FormattingEnabled = true;
+            this.cb1.Location = new System.Drawing.Point(176, 81);
+            this.cb1.Name = "cb1";
+            this.cb1.Size = new System.Drawing.Size(140, 21);
+            this.cb1.TabIndex = 14;
+            this.cb1.Text = "Desplegar";
             // 
-            // button1
+            // label7
             // 
-            this.button1.Location = new System.Drawing.Point(235, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 33);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(235, 199);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 33);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(102, 274);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 35);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Volver a Menú";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(162, 55);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(176, 13);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Seleccione opción de registro";
             // 
             // Registrar_peso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(430, 336);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(502, 389);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.cb1);
+            this.Controls.Add(this.btnhome);
+            this.Controls.Add(this.btncancel);
+            this.Controls.Add(this.btnsave);
+            this.Controls.Add(this.tb_code);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.datetime);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbpeso);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Snow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Registrar_peso";
-            this.Text = "Registrar_peso";
+            this.Text = "Control de Peso";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registrar_peso_FormClosing);
+            this.Load += new System.EventHandler(this.Registrar_peso_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,17 +195,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbpeso;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker datetime;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox tb_code;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.Button btnhome;
+        private System.Windows.Forms.ComboBox cb1;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -17,7 +17,7 @@ namespace Capa_de_negocio
 
         Classconexion Cnt = new Classconexion();
 
-        public String Registrar_venta()
+        public String Registrar_venta_toro()
         {
             String report = "";
             List<Classparametros> lst = new List<Classparametros>();
@@ -27,6 +27,31 @@ namespace Capa_de_negocio
                 lst.Add(new Classparametros("@Precio", precio));
                 lst.Add(new Classparametros("@Fech_v", fecha));
                 lst.Add(new Classparametros("@Cod_toro", cod_toro));
+                lst.Add(new Classparametros("@Cod_vaca", DBNull.Value));
+
+                lst.Add(new Classparametros("@Reporte", SqlDbType.NVarChar, 50));
+                Cnt.Exec_sp("reg_ventas", lst);
+                report = lst[4].Valor.ToString();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return report;
+        }
+
+        public String Registrar_venta_vaca()
+        {
+            String report = "";
+            List<Classparametros> lst = new List<Classparametros>();
+
+            try
+            {
+                lst.Add(new Classparametros("@Precio", precio));
+                lst.Add(new Classparametros("@Fech_v", fecha));
+                lst.Add(new Classparametros("@Cod_toro", DBNull.Value));
                 lst.Add(new Classparametros("@Cod_vaca", cod_vaca));
 
                 lst.Add(new Classparametros("@Reporte", SqlDbType.NVarChar, 50));
